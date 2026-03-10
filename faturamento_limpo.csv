@@ -1,0 +1,121 @@
+clube,estado,ano,faturamento
+Flamengo,Rio de Janeiro,2019,950400000.0
+Palmeiras,São Paulo,2019,665500000.0
+Grêmio,Rio Grande do Sul,2019,497000000.0
+Internacional,Rio Grande do Sul,2019,441300000.0
+Corinthians,São Paulo,2019,425700000.0
+Santos,São Paulo,2019,399800000.0
+São Paulo,São Paulo,2019,398000000.0
+Athletico Paranaense,Paraná,2019,378700000.0
+Atlético Mineiro,Minas Gerais,2019,342700000.0
+Cruzeiro,Minas Gerais,2019,280800000.0
+Fluminense,Rio de Janeiro,2019,265200000.0
+Vasco,Rio de Janeiro,2019,215300000.0
+Botafogo,Rio de Janeiro,2019,191300000.0
+Bahia,Bahia,2019,189500000.0
+Fortaleza,Ceará,2019,120400000.0
+Goiás,Goiás,2019,99300000.0
+Ceará,Ceará,2019,98000000.0
+Chapecoense,Santa Catarina,2019,79900000.0
+Vitória,Bahia,2019,53000000.0
+Coritiba,Paraná,2019,37900000.0
+Flamengo,Rio de Janeiro,2020,668600000.0
+Atlético Mineiro,Minas Gerais,2020,615800000.0
+Palmeiras,São Paulo,2020,611800000.0
+Grêmio,Rio Grande do Sul,2020,489000000.0
+Corinthians,São Paulo,2020,474300000.0
+São Paulo,São Paulo,2020,358400000.0
+Athletico Paranaense,Paraná,2020,324800000.0
+Internacional,Rio Grande do Sul,2020,281200000.0
+Santos,São Paulo,2020,239800000.0
+Fluminense,Rio de Janeiro,2020,194300000.0
+Vasco,Rio de Janeiro,2020,191700000.0
+Red Bull Bragantino,São Paulo,2020,159600000.0
+Botafogo,Rio de Janeiro,2020,156500000.0
+Bahia,Bahia,2020,130600000.0
+Cruzeiro,Minas Gerais,2020,123000000.0
+Ceará,Ceará,2020,103200000.0
+Coritiba,Paraná,2020,101800000.0
+Goiás,Goiás,2020,90300000.0
+Fortaleza,Ceará,2020,86100000.0
+Sport,Pernambuco,2020,54500000.0
+Flamengo,Rio de Janeiro,2021,1082000000.0
+Palmeiras,São Paulo,2021,972600000.0
+Grêmio,Rio Grande do Sul,2021,533000000.0
+Corinthians,São Paulo,2021,502600000.0
+Atlético Mineiro,Minas Gerais,2021,475000000.0
+São Paulo,São Paulo,2021,458500000.0
+Santos,São Paulo,2021,406800000.0
+Internacional,Rio Grande do Sul,2021,382200000.0
+Fluminense,Rio de Janeiro,2021,333600000.0
+Red Bull Bragantino,São Paulo,2021,291300000.0
+Athletico Paranaense,Paraná,2021,261800000.0
+Bahia,Bahia,2021,208600000.0
+Vasco,Rio de Janeiro,2021,186200000.0
+Fortaleza,Ceará,2021,175100000.0
+Ceará,Ceará,2021,150400000.0
+Cruzeiro,Minas Gerais,2021,138800000.0
+Botafogo,Rio de Janeiro,2021,118400000.0
+Atlético Goianiense,Goiás,2021,113200000.0
+América Mineiro,Minas Gerais,2021,98800000.0
+Sport,Pernambuco,2021,83600000.0
+Flamengo,Rio de Janeiro,2022,1177000000.0
+Palmeiras,São Paulo,2022,856000000.0
+Corinthians,São Paulo,2022,779100000.0
+São Paulo,São Paulo,2022,650800000.0
+Internacional,Rio Grande do Sul,2022,466600000.0
+Atlético Mineiro,Minas Gerais,2022,397700000.0
+Grêmio,Rio Grande do Sul,2022,389400000.0
+Red Bull Bragantino,São Paulo,2022,350200000.0
+Athletico Paranaense,Paraná,2022,349100000.0
+Santos,São Paulo,2022,341800000.0
+Fluminense,Rio de Janeiro,2022,328900000.0
+Botafogo,Rio de Janeiro,2022,271700000.0
+Fortaleza,Ceará,2022,243100000.0
+Ceará,Ceará,2022,165700000.0
+Coritiba,Paraná,2022,156200000.0
+Cruzeiro,Minas Gerais,2022,146100000.0
+Cuiabá,Mato Grosso,2022,124600000.0
+América Mineiro,Minas Gerais,2022,121400000.0
+Goiás,Goiás,2022,106600000.0
+Bahia,Bahia,2022,100200000.0
+Flamengo,Rio de Janeiro,2023,1374000000.0
+Corinthians,São Paulo,2023,1010000000.0
+Palmeiras,São Paulo,2023,908900000.0
+Athletico Paranaense,Paraná,2023,898900000.0
+Fluminense,Rio de Janeiro,2023,695000000.0
+São Paulo,São Paulo,2023,680700000.0
+Internacional,Rio Grande do Sul,2023,654500000.0
+Botafogo,Rio de Janeiro,2023,570000000.0
+Red Bull Bragantino,São Paulo,2023,488200000.0
+Grêmio,Rio Grande do Sul,2023,454000000.0
+Santos,São Paulo,2023,424400000.0
+Fortaleza,Ceará,2023,371600000.0
+Vasco,Rio de Janeiro,2023,364000000.0
+Atlético Mineiro,Minas Gerais,2023,350400000.0
+Cruzeiro,Minas Gerais,2023,243800000.0
+Sport,Pernambuco,2023,208700000.0
+América Mineiro,Minas Gerais,2023,187800000.0
+Goiás,Goiás,2023,186400000.0
+Cuiabá,Mato Grosso,2023,168500000.0
+Bahia,Bahia,2023,158300000.0
+Flamengo,Rio de Janeiro,2024,1334000000.0
+Palmeiras,São Paulo,2024,1274000000.0
+Corinthians,São Paulo,2024,1115000000.0
+São Paulo,São Paulo,2024,731900000.0
+Botafogo,Rio de Janeiro,2024,719700000.0
+Fluminense,Rio de Janeiro,2024,684200000.0
+Atlético Mineiro,Minas Gerais,2024,674100000.0
+Internacional,Rio Grande do Sul,2024,621000000.0
+Santos,São Paulo,2024,459400000.0
+Red Bull Bragantino,São Paulo,2024,425200000.0
+Grêmio,Rio Grande do Sul,2024,403100000.0
+Cruzeiro,Minas Gerais,2024,307600000.0
+Vasco,Rio de Janeiro,2024,299900000.0
+Athletico Paranaense,Paraná,2024,288100000.0
+Bahia,Bahia,2024,273300000.0
+Fortaleza,Ceará,2024,231500000.0
+Cuiabá,Mato Grosso,2024,218800000.0
+Vitória,Bahia,2024,177400000.0
+Ceará,Ceará,2024,161900000.0
+Sport,Pernambuco,2024,135900000.0
