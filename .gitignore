@@ -1,0 +1,43 @@
+# VARIAVEIS DE AMBIENTE / CREDENCIAIS
+.env
+.envrc
+*.env
+*credentials*
+*secrets*
+
+# DADOS (CSV NAO VERSIONADOS)
+data/csvs/
+data/geral.csv
+data/geral/
+data/nome_final_do_arquivo.csv
+limpos/
+*.csv~
+
+# ARQUIVOS DE LOG / DEBUG
+*.log
+
+# PYTHON (CACHE E ARTEFATOS)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+
+# SISTEMA / EDITORES
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+.history/
+*.code-workspace
+
+# POWER BI
+*.pbix
+*.pbit
+
+# BACKUPS DO POSTGRES
+*.sql~
+*.dump
+*.bak
