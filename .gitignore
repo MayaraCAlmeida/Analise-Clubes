@@ -1,11 +1,11 @@
-# VARIAVEIS DE AMBIENTE / CREDENCIAIS
+# credenciais
 .env
 .envrc
 *.env
 *credentials*
 *secrets*
 
-# DADOS (CSV NAO VERSIONADOS)
+# dados
 data/csvs/
 data/geral.csv
 data/geral/
@@ -13,10 +13,7 @@ data/nome_final_do_arquivo.csv
 limpos/
 *.csv~
 
-# ARQUIVOS DE LOG / DEBUG
-*.log
-
-# PYTHON (CACHE E ARTEFATOS)
+# python
 __pycache__/
 *.pyc
 *.pyo
@@ -25,19 +22,19 @@ build/
 dist/
 *.egg-info/
 
-# SISTEMA / EDITORES
-Thumbs.db
+# sistema e editores
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
 .history/
 *.code-workspace
 
-# POWER BI
+# power bi
 *.pbix
 *.pbit
 
-# BACKUPS DO POSTGRES
+# postgres
 *.sql~
 *.dump
 *.bak
