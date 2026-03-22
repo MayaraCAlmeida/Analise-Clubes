@@ -1,13 +1,4 @@
-"""
-Script para enviar o arquivo CSV completo para a tabela no PostgreSQL.
-
-Funcionalidades:
-- Lê o CSV informado via variável de ambiente;
-- Conecta ao PostgreSQL usando variáveis de ambiente;
-- Envia os dados para a tabela informada;
-- Inclui tratamento de erros e mensagens claras.
-
-"""
+# lê o CSV e sobe pra tabela no postgres
 
 import os
 import pandas as pd
@@ -16,64 +7,39 @@ from sqlalchemy.exc import SQLAlchemyError
 
 
 def main():
-
-    # VARIÁVEIS DE AMBIENTE
-    CSV_PATH = os.getenv("CSV_PATH")
-    PG_USER = os.getenv("PG_USER")
+    CSV_PATH    = os.getenv("CSV_PATH")
+    PG_USER     = os.getenv("PG_USER")
     PG_PASSWORD = os.getenv("PG_PASSWORD")
-    PG_HOST = os.getenv("PG_HOST", "localhost")
-    PG_PORT = os.getenv("PG_PORT", "5432")
+    PG_HOST     = os.getenv("PG_HOST", "localhost")
+    PG_PORT     = os.getenv("PG_PORT", "5432")
     PG_DATABASE = os.getenv("PG_DATABASE")
-    TABLE_NAME = os.getenv("TABLE_NAME", "faturamento_total")
+    TABLE_NAME  = os.getenv("TABLE_NAME", "faturamento_total")
 
-    # Verificar variáveis obrigatórias
-    required = {
-        "CSV_PATH": CSV_PATH,
-        "PG_USER": PG_USER,
-        "PG_PASSWORD": PG_PASSWORD,
-        "PG_DATABASE": PG_DATABASE,
-    }
-
-    missing = [var for var, value in required.items() if value is None]
-
+    missing = [k for k, v in {"CSV_PATH": CSV_PATH, "PG_USER": PG_USER,
+               "PG_PASSWORD": PG_PASSWORD, "PG_DATABASE": PG_DATABASE}.items() if not v]
     if missing:
-        print(f"❌ ERRO: Variáveis de ambiente ausentes: {', '.join(missing)}")
-        print("Configure-as no arquivo .env antes de rodar o script.")
+        print(f"variáveis ausentes: {', '.join(missing)}")
         return
-
-    # LEITURA DO CSV
-    print("📥 Lendo arquivo CSV...")
 
     try:
         df = pd.read_csv(CSV_PATH)
-        print(f"✔ CSV carregado com sucesso! {df.shape[0]} linhas.")
     except Exception as e:
-        print(f"❌ ERRO ao ler CSV: {e}")
+        print("erro ao ler CSV:", e)
         return
-
-    # CONEXÃO COM O POSTGRES
-    print("🔌 Conectando ao PostgreSQL...")
-
-    engine_url = (
-        f"postgresql+psycopg2://{PG_USER}:{PG_PASSWORD}"
-        f"@{PG_HOST}:{PG_PORT}/{PG_DATABASE}"
-    )
 
     try:
-        engine = create_engine(engine_url)
-        print("✔ Conexão estabelecida!")
+        engine = create_engine(
+            f"postgresql+psycopg2://{PG_USER}:{PG_PASSWORD}@{PG_HOST}:{PG_PORT}/{PG_DATABASE}"
+        )
     except SQLAlchemyError as e:
-        print(f"❌ ERRO ao conectar ao banco: {e}")
+        print("erro ao conectar:", e)
         return
-
-    # UPLOAD PARA O BANCO
-    print("📤 Enviando dados ao banco...")
 
     try:
         df.to_sql(TABLE_NAME, engine, if_exists="replace", index=False)
-        print(f"🎉 Upload concluído! Tabela '{TABLE_NAME}' atualizada.")
+        print(f"tabela '{TABLE_NAME}' atualizada com {len(df)} linhas")
     except Exception as e:
-        print(f"❌ ERRO ao enviar dados: {e}")
+        print("erro ao enviar dados:", e)
 
 
 if __name__ == "__main__":
